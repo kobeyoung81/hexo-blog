@@ -63,8 +63,8 @@ function getBinaryUrl() {
 ```
 原来可以通过设置环境变量覆盖默认的github下载路径，刚好手边就有现成的http服务器，将相应的xxx_binding.node文件扔上去，然后在要安装node-sass机器上设置SASS_BINARY_SITE环境变量就可以了。
 
-注意：如果http文件服务器是http://XXX.XXX.XX:8080/YYY，则设置SASS_BINARY_SITE=http://XXX.XXX.XX:8080/YYY。接下来需要在相应目录下创建**版本号文件夹**，然后将相应的XXX_binding.node放上去。完整的下载路径应该类似于http://XXX.XXX.XX:8080/YYY/v4.14.1/win32-x64-83_binding.node
+注意：如果http文件服务器是 [http://XXX.XXX.XX:8080/YYY]()，则设置 SASS_BINARY_SITE=[http://XXX.XXX.XX:8080/YYY]() 。接下来需要在相应目录下创建**版本号文件夹**，然后将相应的XXX_binding.node放上去。完整的下载路径应该类似于 [http://XXX.XXX.XX:8080/YYY/v4.14.1/win32-x64-83_binding.node]()。
 
 之后正常安装npm install node-sass即可。总算搞定了。
 
-除过设置SASS_BINARY_SITE环境变量，还可以指定二进制的存放位置，将文件直接放在那个路径中即可。我心累了，请大家自行查看https://github.com/sass/node-sass/blob/master/lib/extensions.js文件。
+除过设置SASS_BINARY_SITE环境变量，还可以指定二进制的存放位置，将文件直接放在那个路径中即可。我心累了，请大家自行查看[https://github.com/sass/node-sass/blob/master/lib/extensions.js](https://github.com/sass/node-sass/blob/master/lib/extensions.js) 文件。
