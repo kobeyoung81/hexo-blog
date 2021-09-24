@@ -97,7 +97,7 @@ donate:
 # weibo,qq,qzone,wechat,tencent,douban,diandian,facebook,twitter,google,linkedin
 share:
   enable: true  # 是否启用分享
-  sites: weibo,qq,wechat,facebook,twitter  # PC端显示的分享图标
+  sites: weibo,qq,wechat # PC端显示的分享图标
   mobile_sites: weibo,qq,qzone  # 移动端显示的分享图标
 
 # Github
@@ -171,36 +171,36 @@ postCount:
 
 # Plugins
 plugins:
-  google_analytics: # enter the tracking ID for your Google Analytics
-  google_site_verification: # enter Google site verification code
+  # google_analytics: # enter the tracking ID for your Google Analytics
+  # google_site_verification: # enter Google site verification code
   baidu_analytics: # enter Baidu Analytics hash key
   tencent_analytics: 
   
 # Miscellaneous
-twitter:
-google_plus:
-fb_admins:
-fb_app_id:  
+# twitter:
+# google_plus:
+# fb_admins:
+# fb_app_id:  
   
 # profile
 profile:
   enabled: true # Whether to show profile bar
   avatar: images/avatar.jpg
   gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
-  author: 昵称
-  author_title: Web Developer & Designer
+  author: kobeyoung81
+  author_title: 程序员
   author_description: 个人简介。
-  location: Shenzhen, China
-  follow: https://github.com/cofess
+  location: 北京，中国
+  follow: https://github.com/kobeyoung81
   # Social Links
   social:
     links:
-      github: https://github.com/cofess
+      github: https://github.com/kobeyoung81
       weibo: http://weibo.com/cofess
-      twitter: https://twitter.com/iwebued
+      # twitter: https://twitter.com/iwebued
       # facebook: /
       # dribbble: /
-      behance: https://www.behance.net/cofess
+      # behance: https://www.behance.net/cofess
       rss: atom.xml
     link_tooltip: true # enable the social link tooltip, options: true, false
   # My Skills 
