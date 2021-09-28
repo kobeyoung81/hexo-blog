@@ -121,11 +121,11 @@ comment:
     ClientSecret: 
     lazy: false
   gitalk: # gitalk. https://gitalk.github.io/
-    owner:  kobeyoung81 #必须. GitHub repository 所有者，可以是个人或者组织。
-    admin:  kobeyoung81 #必须. GitHub repository 的所有者和合作者 (对这个 repository 有写权限的用户)。
-    repo:  hexo-blog #必须. GitHub repository.
-    ClientID:  c37ae0692a855fde48f6 #必须. GitHub Application Client ID.
-    ClientSecret:  915d4cbc6f11be0a495dc6527a3c94327a66a92d #必须. GitHub Application Client Secret.
+    owner:   #必须. GitHub repository 所有者，可以是个人或者组织。
+    admin:   #必须. GitHub repository 的所有者和合作者 (对这个 repository 有写权限的用户)。
+    repo:   #必须. GitHub repository.
+    ClientID:   #必须. GitHub Application Client ID.
+    ClientSecret:   #必须. GitHub Application Client Secret.
   valine: # Valine. https://valine.js.org
     appid:  # your leancloud application appid
     appkey:  # your leancloud application appkey
