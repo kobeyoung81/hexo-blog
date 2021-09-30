@@ -1,7 +1,7 @@
 ---
 title: 使用Goproxy解决golang.org模块无法下载的问题
 date: 2021-09-24 08:55:56
-tags: [go, goproxy.cn, golang.org]
+tags: [golang]
 categories: 开发环境
 ---
 
