@@ -96,23 +96,15 @@ https://api.thecodebuzz.com/v1.0/books_management/north_america/orders/{order-id
 https://api.thecodebuzz.com/v1.0/books-management/north-america/orders/{order-id}
 ```
 
-### API URL Length size limitation
+### API URL 长度限制
 As per RFC 7230,
+按照RFC 7230的要求，
 
-HTTP does not place a predefined limit on the length of a request-line. […] A server that receives a request-target longer than any URI it wishes to parse MUST respond with a 414 (URI Too Long) status code.
+> HTTP请求中不存在预先定义的长度上限。[...] 服务器收到超过预期长度上限的请求必须回复“414(URI Too Long)”状态码。
 
-However, URL length should be in consideration as some server does not yet support URL length beyond 2048 characters.
+另一方面，现有部分服务确实无法处理超过2048个字符长度的URL。
 
-URL length issue is mostly found in the HTTP GET method being called with large inputs. These limitations often come as surprises.
-
-### Canonical Identifier for Movable Resource
-Resources that can be moved or be renamed SHOULD expose a URL that contains a unique stable identifier. Often such resources can use GUID or other techniques to assign a unique identifier.
-
-An example of a URL containing a canonical identifier is:
-
-Example
-
-https://api.thecodebuzz.com/v1.0/books-management/north-america/orders/123819274834875/cart
+URL长度超长通常伴随着含有较多参数的HTTP GET方法出现，需要引起注意。
 
 ## 更多示例
 ### HTTP GET
@@ -149,9 +141,7 @@ HTTP DELETE http://api.thecodebuzz.com/books-agencies/agencies/books/{book-id}
 HTTP DELETE http://api.thecodebuzz.com/books-agencies/agencies/{agency-id}/books/{book-id}  
 ```
 
-All the above naming conventions are generic enough and can be used or extended for RESTFul services based on DDD (Domain-Driven Design) or non-DDD API or services.
-
-Do you have any better suggestions or inputs? Please sound off your comments below. Thanks.
+上面示例中的命名都遵循了通用的规范，可以很容易的用来构建新的RESTFul服务。
 
 ## 总结
-Resource is prime in the REST architecture specifications, principles and standards. It’s important that REST URIs follow a set of syntax rules and maintain the identification of resources in API. Today in this article we learned a few best practices and naming conventions for naming REST API URL.
+资源是REST理念、标准和架构的核心。基于REST的URI应该遵循相应的语义规则和标准来标识API中的资源。亲爱的读者如果有任何的问题，欢迎在下方留言。
