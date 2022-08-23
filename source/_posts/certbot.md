@@ -99,3 +99,5 @@ sudo certbot certonly --webroot -w /home/webpath -d www.xxx.cn -d xxx.cn
 sudo certbot renew
 ```
 会自动更新所有证书，可以将上述语句放入crontab中，目前证书有效期为90天。
+
+证书更新后nginx需要reload。
